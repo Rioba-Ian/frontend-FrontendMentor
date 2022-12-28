@@ -1,0 +1,47 @@
+:root {
+    /* primary */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-saturated-blue: hsl(229, 23%, 23%);
+    --dark-grey-blue: hsl(227, 10%, 46%);
+
+    /* neutral */
+    --dark-grey: hsl(0, 0%, 59%);
+}
+
+html {
+    height: 100%;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1.125rem;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-cyan);
+
+    display: grid;
+    align-items: center;
+    grid-template-rows: 5fr 1fr;
+}
+
+main {
+    margin: 20vmin auto 0 auto;
+    background-color: #fff;
+}
+
+
+footer {}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
