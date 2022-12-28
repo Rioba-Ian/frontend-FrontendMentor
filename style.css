@@ -21,8 +21,45 @@ html {
     box-sizing: border-box;
 }
 
+a {
+    color: #fff;
+}
+
+
+
 img {
     max-width: 100%;
+}
+
+h1 {
+    font-size: clamp(1rem, -0.8750rem + 8.3333vw, 2rem);
+    color: var(--very-dark-saturated-blue);
+}
+
+h2 {
+    font-size: clamp(1rem, -0.8750rem + 8.3333vw, 1.25rem);
+    color: var(--very-dark-saturated-blue);
+}
+
+h3 {
+    font-size: clamp(1rem, -0.8750rem + 8.3333vw, 1.125rem);
+    color: var(--very-dark-saturated-blue);
+}
+
+p {
+    font-size: clamp(0.75rem, -0.8750rem + 5.3333vw, 1rem);
+    color: var(--very-dark-saturated-blue);
+
+}
+
+span,
+p,
+hr {
+    font-weight: 300;
+}
+
+hr {
+    background-color: var(--very-dark-saturated-blue);
 }
 
 body {
@@ -56,28 +93,57 @@ main {
 .profile-bg {
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
-    position: relative;
 }
 
 .profile {
     position: relative;
     text-align: center;
-    transform: translateY(-50%);
+    transform: translateX(0%);
+    transform: translateY(-75%);
+
+    padding: 2em 0;
 }
 
 .profile-img {
+    top: 0%;
+    right: 33.33%;
+    position: absolute;
+    height: auto;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 8px solid white;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
 
 }
 
-footer {}
+.profile-details {
+    padding: 1em 0;
+    text-align: center;
+}
+
+.profile-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    padding: 1em 0;
+}
+
+.profile-stats div {
+    text-align: center;
+}
+
+footer {
+    color: var(--very-dark-saturated-blue);
+    font-weight: 700;
+}
 
 .attribution {
-    font-size: 11px;
     text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--very-dark-saturated-blue);
 }
